@@ -1,0 +1,336 @@
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end global rules */
+/* start header */
+.header {
+  background-color: black;
+  height: 50px;
+  box-shadow: 0 0 15px black;
+  z-index: 2;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.header nav ul li {
+  color: white;
+  padding: 15px;
+}
+
+/* End header */
+/* Start first */
+.first {
+  background-image: url(../Assets/img/coffeehouse.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  background-position: 0px -350px;
+  position: relative;
+}
+
+.first .container h1 {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  color: white;
+}
+
+.first .container .open-time {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.first .container .location {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: white;
+  padding: 5px;
+}
+
+/* end first section */
+/* start about */
+.about .container h2 {
+  text-align: center;
+  margin: 50px auto;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  font-weight: lighter;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.about .container .box p {
+  margin: 20px auto;
+  width: 900px;
+  line-height: 1.5;
+}
+
+.about .container .box .background {
+  background-color: #eee;
+  line-height: 2;
+  padding: 20px;
+  position: relative;
+}
+
+.about .container .box .background span {
+  display: block;
+  margin-top: 10px;
+}
+
+.about .container .box .background::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #ddd;
+  top: 0;
+  left: -5px;
+}
+
+.about .container .box img {
+  display: block;
+  margin: auto;
+}
+
+.about .container .info span {
+  font-weight: bold;
+}
+
+/* end about */
+/* Start menu */
+.menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .container .head {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid #dddbd7;
+}
+
+.menu .container .head ul {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 3px 7px #aeaeae;
+  list-style-type: none;
+}
+
+.menu .container .head .eat {
+  color: #f1f1f1;
+  background-color: #616161;
+  padding: 2px 130px;
+  margin: 5px 11px;
+}
+
+.menu .container .head .drink {
+  padding: 2px 115px;
+  margin: 5px auto 5px auto;
+}
+
+.menu .container h2 {
+  text-align: center;
+  margin: 50px auto;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  font-weight: lighter;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.menu .container .head {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu .container .box {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  border: 1px solid #dddbd7;
+}
+
+.menu .container .box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu .container .box ul li {
+  padding: 20px;
+}
+
+.menu .container .box ul li h3 {
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.menu .container .box ul li p {
+  color: #575757;
+  padding-bottom: 10px;
+}
+
+.menu .container img {
+  display: block;
+  margin: 30px auto;
+}
+
+/* end menu */
+/* start info */
+.info .container h2 {
+  text-align: center;
+  margin: 30px auto;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  font-weight: lighter;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.info .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info .container .box1 p {
+  margin: 20px auto;
+  width: 900px;
+  line-height: 1.5;
+}
+
+.info .container .box1 img {
+  display: block;
+  margin: 20px auto;
+  width: 900px;
+}
+
+.info .container .box1 .background-color span {
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+
+.info .container .box1 .bold span {
+  font-weight: bold;
+}
+
+.info .container .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.info .container .form form input {
+  width: 900px;
+  padding: 30px 15px;
+  border: 1px solid #cecece;
+  border-radius: 2px;
+}
+
+.info .container .form form button {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  margin: 20px;
+  transition: 0.3s;
+}
+
+.info .container .form form button:hover {
+  background-color: #aeaeae;
+  padding: 8px;
+}
+
+/* end info */
+/* start footer  */
+.foot {
+  height: 300px;
+  background-color: #eee;
+}
+
+.foot .container {
+  display: flex;
+  justify-content: center;
+}
+
+.foot .container p {
+  margin-top: 150px;
+}
+
+.foot .container p a {
+  color: black;
+}
+
+/* The end :) */
